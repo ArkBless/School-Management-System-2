@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Marks</title>
-    <link rel="stylesheet" href="c/addMarks.css">
+    <link rel="stylesheet" href="css/addMarks.css">
 </head>
 <body>
     <div class="container">
@@ -37,7 +37,34 @@
             </div>
         </div>
     </div>
+    <a href="viewMarks.php" style="margin-left:20px;">🔍 View All Marks</a>
+
 
     <script src="js/addMarks.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/adminDashboard.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const addMarksLink = document.getElementById("add-marks-link");
+            const mainContent = document.getElementById("main-content");
+
+            if (addMarksLink) {
+                addMarksLink.addEventListener("click", () => {
+                    fetch("addMarks.php")
+                        .then(response => response.text())
+                        .then(html => {
+                            mainContent.innerHTML = html;
+                        })
+                        .catch(error => {
+                            mainContent.innerHTML = "<p>Error loading Add Marks page.</p>";
+                            console.error("Error loading addMarks.html:", error);
+                        });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Teacher</title>
-    <link rel="stylesheet" href="c/addStudent.css">
+    <link rel="stylesheet" href="css/addStudent.css">
 </head>
 <body>
     <div class="container">
