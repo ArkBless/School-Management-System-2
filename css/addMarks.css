@@ -1,0 +1,114 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the entire form */
+.container {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+/* Section for the form */
+.form-section {
+    padding: 10px;
+}
+
+.form-section h3 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Form input styles */
+form label {
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Buttons section */
+.form-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Button styles */
+.save {
+    background-color: #28a745;
+    color: white;
+}
+
+.save:hover {
+    background-color: #218838;
+}
+
+.update {
+    background-color: #ffc107;
+    color: black;
+}
+
+.update:hover {
+    background-color: #e0a800;
+}
+
+.clear {
+    background-color: #dc3545;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #c82333;
+}
