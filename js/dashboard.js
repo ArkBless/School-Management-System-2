@@ -70,4 +70,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
     }
+
+    const dashboardLink = document.getElementById('admin-dashboard-link');
+    if (dashboardLink) {
+        dashboardLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            fetch('adminDashboard.php')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    document.getElementById('main-content').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error loading adminDashboard.php:', error);
+                    document.getElementById('main-content').innerHTML = '<p>Error loading admin Dashboard form.</p>';
+                });
+        });
+    }
+
 });
