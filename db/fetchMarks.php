@@ -14,4 +14,9 @@ $sql = "SELECT
         JOIN subjects sb ON m.subjectID = sb.subject_id";
 
 $result = $conn->query($sql);
+
+// Optional error handling
+if (!$result) {
+    die("Query failed: " . $conn->error);
+}
 ?>
