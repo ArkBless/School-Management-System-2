@@ -16,7 +16,7 @@ $result = mysqli_query($conn, $query);
 </head>
 <body>
   <div class="container">
-    <h2 class="header"><span class="icon">👥</span> STUDENT</h2>
+    <h2 class="header"><span class="icon">👥</span> STUDENTS</h2>
 
     <div class="main">
       <!-- LEFT: FORM -->
