@@ -1,6 +1,6 @@
 <?php
 // Connect to DB (update with your DB credentials)
-$conn = new mysqli("localhost", "root", "", "studentperfomance");
+$conn = new mysqli("localhost", "root", "", "petroz1");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

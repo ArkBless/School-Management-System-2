@@ -39,6 +39,9 @@ $result = mysqli_query($conn, $query);
           <input type="number" id="age" name="age"><br>
 
           <div class="form-buttons">
+            <form method="POST" action="count.php">
+    <input type="text" name="name" required placeholder="Student Name">
+
             <button type="submit" class="save">SAVE</button>
             <button type="button" class="update">UPDATE</button>
             <button type="reset" class="clear">CLEAR</button>

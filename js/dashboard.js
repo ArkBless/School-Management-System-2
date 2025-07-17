@@ -91,5 +91,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
     }
-
+function refreshStudentCount() {
+    fetch('count.php')
+        .then(res => res.text())
+        .then(count => {
+            document.getElementById('total-students').textContent = count;
+        });
+}
 });
